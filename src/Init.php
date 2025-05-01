@@ -46,7 +46,8 @@ final class Init
         $results = ['success', 'normal', 'fail'];
         $stmt = $this->pdo->prepare("INSERT INTO test (name, type, summary, result) 
                                                 VALUES (:name, :type, :summary, :result)");
-        $iMax = count($results);
+//        $iMax = count($results);
+        $iMax = 100;
         for ($i = 0; $i < $iMax; $i++) {
             $stmt->bindValue(':name', 'test' . "Name". $i);
             $stmt->bindValue(':type', 'type' . $i);
