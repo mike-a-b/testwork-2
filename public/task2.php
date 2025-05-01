@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * Оптимизация запроса и таблиц в БД
+ * /../src/query_task2.sql файл с последовательностью sql запросов для оптимизации
+ */
 require dirname(__DIR__). '/vendor/autoload.php';
 
 use Exception;

@@ -114,7 +114,7 @@ mysql> EXPLAIN SELECT * FROM link JOIN data ON link.data_id = data.id JOIN info 
      -> Single-row index lookup on info using PRIMARY (id=link.info_id)  (cost=0.25 rows=1) (actual time=0.00151..0.00154 rows=1 loops=600)
      -> Single-row index lookup on data using PRIMARY (id=link.data_id)  (cost=0.25 rows=1) (actual time=0.00139..0.00142 rows=1 loops=600)
 
-**Задача №3.**
+**Задача №3.** решение - public/scan_files.php, public/generate_files.php (создание тестовых файлов)
 
 Создать скрипт, который в папке /datafiles найдет все файлы, имена которых состоят из цифр и букв латинского алфавита, имеют расширение ixt и выведет на экран имена этих файлов, упорядоченных по имени.Задание должно быть выполнено с использованием регулярных выражений.Весь код должен быть прокомментирован в стиле PHPDocumentor'а.
 
